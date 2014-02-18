@@ -7,15 +7,7 @@ To run:
     docker run -p 9876:9876 -v $PWD:/opt/karma -i -t docker-karma
 
 
-This will run all the Jasmine tests in the **tests** directory.
-
-[Docker][1]
-
-[Karma][2]
-
-[PhantomJS][3]
-
-[Jasmine][4]
+This will run all the [Jasmine][4] tests in the **tests** directory using [Karma][2] and [PhantomJS][3] in a [Docker][1] container.
 
 [1]: https://www.docker.io/
 [2]: http://karma-runner.github.io/0.10/index.html
