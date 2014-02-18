@@ -10,8 +10,11 @@ To run:
 This will run all the Jasmine tests in the **tests** directory.
 
 [Docker][1]
+
 [Karma][2]
+
 [PhantomJS][3]
+
 [Jasmine][4]
 
 [1]: https://www.docker.io/
