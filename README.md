@@ -12,4 +12,4 @@ This will run all the [Jasmine][4] tests in the **tests** directory using [Karma
 [1]: https://www.docker.io/
 [2]: http://karma-runner.github.io/0.10/index.html
 [3]: http://phantomjs.org/
-[4]: http://pivotal.github.io/jasmine/
+[4]: https://jasmine.github.io/
