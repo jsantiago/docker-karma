@@ -1,6 +1,6 @@
 To build:
 
-    docker build -rm -t docker-karma .
+    docker build -t docker-karma .
 
 To run:
 
