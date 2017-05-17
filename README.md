@@ -4,6 +4,7 @@ To build:
 
 To run:
 
+    npm install
     docker run -p 9876:9876 -v $PWD:/opt/karma -i -t docker-karma
 
 
