@@ -9,6 +9,11 @@ module.exports = function(config) {
         // frameworks to use
         frameworks: ['jasmine'],
 
+    plugins: [
+      require('karma-jasmine'),
+      require('karma-chrome-launcher'),
+    ],
+
         // list of files / patterns to load in the browser
         files: [
             'tests/*.js'
@@ -43,7 +48,20 @@ module.exports = function(config) {
         // - Safari (only Mac)
         // - PhantomJS
         // - IE (only Windows)
-        browsers: ['PhantomJS'],
+        browsers: ['ChromeNoSandboxHeadless'],
+     customLaunchers: {
+      ChromeNoSandboxHeadless: {
+	base: 'Chromium',
+	flags: [
+	  '--no-sandbox',
+	  // See https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md
+	  '--headless',
+	  '--disable-gpu',
+	  // Without a remote debugging port, Google Chrome exits immediately.
+	  ' --remote-debugging-port=9222'
+	]
+      }
+    },
 
         // If browser does not capture in given timeout [ms], kill it
         captureTimeout: 60000,
