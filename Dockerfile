@@ -1,7 +1,7 @@
-FROM dockerfile/nodejs
+FROM node:boron
 
 RUN apt-get -qq update
-RUN apt-get install -y phantomjs
+RUN apt-get install -y chromium
 
 RUN mkdir -p /opt/karma
 WORKDIR /opt/karma
